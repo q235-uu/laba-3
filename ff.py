@@ -1,4 +1,20 @@
 from graph import *
+
+
+def qq():
+    moveTo(0,600)
+
+def bird(x,y,color):
+    penColor(color)
+    line(x, y, x+20, y)
+    line((x+20), y, (x+37), y+10)
+
+def cir(a,b,r):
+    brushColor('yellow')
+    circle(a,b,r)
+  
+
+
 windowSize(1200,800)
 canvasSize(1200,800)
 penSize(0)
@@ -27,13 +43,32 @@ circle(600,500,50)
 polygon([(0,600),(300,400),(600,550)])
 polygon([(600,550),(850,400),(1200,500)])
 
-def qq():
-    moveTo(0,600)
+
+
+x=20
+y=10
+for j in range (1,100):
+    bird(x,y,"black")
+    x+=30
+    y+=30
+x=20
+y=790
+for j in range (1,100):
+    bird(x,y,"black")
+    x+=30
+    y-=30
+
+
+
+
+
+a=40
+b=40
+r=25
+for h in range (1,100):
+    cir(a,b,r)
+    a+=60
+    b+=70
+    r+=5
     
-
-
-
-polygon([(600,0),(596,2),(1200,500)]
-
-
 run()
