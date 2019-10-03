@@ -28,9 +28,21 @@ rectangle(0, 400, 1200, 600)
 brushColor("#b38694")
 rectangle(0, 600, 1200, 800)
 
+
+
 penColor("yellow")
 brushColor("yellow")
-circle(600,100,60)
+obj=circle(600,100,60)
+
+def update():
+    for i in range(1, 11):
+        x=1.1**i
+        y=3*i
+        moveObjectBy(obj, x, y)
+onTimer(update, 20)
+
+
+
 
 penColor("#fc9831")
 brushColor("#fc9831")
