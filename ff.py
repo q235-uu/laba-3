@@ -50,7 +50,8 @@ def update():
         x = 1.1**i
         y = 3 * i
         moveObjectBy(obj, x, y)
-    
+
+
 
 onTimer(update, 20)
 
